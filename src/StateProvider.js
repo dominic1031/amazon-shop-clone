@@ -2,6 +2,7 @@ import React, { createContext, useContext, useReducer } from 'react'
 import { initialState } from './reducer'
 
 // data layer will be accessible to every component
+
 // preps data layer
 export const StateContext = createContext()
 
