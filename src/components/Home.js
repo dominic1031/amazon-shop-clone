@@ -2,15 +2,13 @@ import React from 'react'
 import './Home.css'
 import Product from './Product'
 import { nanoid } from 'nanoid'
+import ImageSlider from '../components/ImageSlider/ImageSlider'
+import NavFooter from './NavFooter'
 function Home() {
     return (
         <div className="home">
             <div className="home__container">
-                <img
-                    src="https://m.media-amazon.com/images/I/61MyQlu87AL._SX3000_.jpg"
-                    alt=""
-                    className="home__image"
-                />
+                <ImageSlider />
                 <div className="home__row">
                     <Product
                         id={nanoid()}
@@ -60,6 +58,7 @@ function Home() {
                     />
                 </div>
             </div>
+            {/* <NavFooter /> */}
         </div>
     )
 }
